@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+    <title> Registration Form </title>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <p> Please fill out this form with the required information</p>
+    <form method="post" action='https://register-demo.or'>
+        <fieldset>
+            <label for="first-name">Enter Your First Name: <input id="first-name" name="first-name" type="text"
+                required /></label>
+            <label for="last-name">Enter Your First Name: <input id="last-name" name="last-name" type="text"
+                required /></label>
+            <label for="email">Enter Your Email: <input id="email" name="email" type="email" required /><label>
+            <label for="new-password"> Create a new Password: <input id="new-password" name="new-password"
+                type="password" required /></label>
+        </fieldset>
+
+        <fieldset>
+            <legend> Account type (required) </legend>
+            <label for="personal-account"><input id="personal-account" type="radio" name="account-type" class="inline"
+                checked /> Personal</label>
+            <label for="buisness-account"><input id="buisness-account" type="radio" name="account-type"
+                class="inline" /> Buisness</label>
+        </fieldset>
+
+        <fieldset>
+            <label for="profile-picture">Upload a profile picture: <input id="profile-picture" type="file"
+                name="file" /></label>
+            <label for="age">Input your age (years): <input id="age" type="number" name="age" min="13"
+                max="120" /></label>
+        </fieldset>
+
+        <label for ="referrer"> How did you hear about us?
+            <select id="referrer" name="referrer">
+                <option value="">(select one)</option>
+                <option value="1">Search Engine (Google, Bing, etc.)</option>
+                <option value="2"> Social Media </option>
+                <option value="3"> Word of Mouth </option>
+                <option value="4"> Some Scary Place </option>
+                <option value="5"> Other</option>
+            </select>
+        </label>
+        <label for="bio" Provide a bio:>
+            <textarea id="bio" name="bio" rows"3" cols="30" placeholder="Trust me I'm lazy"></textarea>
+        </label>
+
+        <label for="terms-and-conditions">
+            <input class="inline" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" /> 
+            Accept the <a href="https://youtu.be/xvFZjo5PgG0?si=Zgi2bBSl3T_18wPl"> terms and conditions</a>
+        </label>
+        <input type="submit" value="Submit" />
+    </form>
+</body>
+</html>
